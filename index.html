@@ -35,8 +35,34 @@
                     <buttons class="previous" id="previous" aria-label="Previous">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10c5.515 0 10-4.486 10-10S17.515 2 12 2zm4 14-6-4v4H8V8h2v4l6-4v8z"></path></svg>
                     </buttons>
+                    <buttons class="play" id="play" aria-label="Play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M8 5v14l11-7z"></path></svg>
+                    </buttons>
+                    <button class="pause" id="pause" aria-label="Pause">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path></svg>
+                    </button>
+                    <button class="next" id="next" aria-label="Next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10c5.515 0 10-4.486 10-10S17.515 2 12 2zm-4 14V8l6 4-6 4z"></path></svg>
+                    </button>
+                    <button id="shuffle" class="shuffle" aria-label="shuffle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M17 17h-1.559l-9.7-10.673A1 1 0 0 0 5.001 6H2v2h2.559l4.09 4.5-4.09 4.501H2v2h3.001a1 1 0 0 0 .74-.327L10 13.987l4.259 4.686a1 1 0 0 0 .74.327H17v3l5-4-5-4v3z"></path><path d="M15.441 8H17v3l5-3.938L17 3v3h-2.001a1 1 0 0 0-.74.327l-3.368 3.707 1.48 1.346L15.441 8z"></path></svg>
+                    </button>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="playlist">
+        <div class="playlist-bar">
+            <div class="parallel-lines">
+                <div></div>
+                <div></div>
+            </div>
+            <h2 class="playlist-title" id="playlist">Playlist</h2>
+            <div class="parallel-lines">
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="playlist-songs"></ul>
         </div>
     </div>
     <script src="main.js"></script>
